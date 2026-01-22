@@ -6,6 +6,7 @@ import {
 } from '@clerk/nextjs'
 import Provider from "./provider";
 import { Toaster } from "@/components/ui/sonner";
+import MinimalFooter from "./_components/MinimalFooter";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -25,9 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" className="dark">
         <body
-          className={outfit.className}
+          className={`${outfit.className} bg-background min-h-screen`}
         >
           <Provider>
             {children}
