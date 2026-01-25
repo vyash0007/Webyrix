@@ -125,7 +125,7 @@ function Hero() {
 
       {/* input box */}
       <div className='w-full max-w-4xl mt-12 animate-in fade-in slide-in-from-bottom-16 duration-1000 delay-200'>
-        <div className='hero-gradient-border rounded-xl bg-secondary/50 input-glow transition-all duration-300 relative'>
+        <div className='gradient-border rounded-xl bg-secondary/50 input-glow transition-all duration-300 relative'>
           <textarea
             placeholder='Describe your design idea...'
             value={userInput}

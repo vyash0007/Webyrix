@@ -193,7 +193,7 @@
   position: relative;
 }
 
-.hero-gradient-border::before {
+/* .hero-gradient-border::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -207,7 +207,7 @@
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
-}
+} */
 
 
 @keyframes glow-pulse {
