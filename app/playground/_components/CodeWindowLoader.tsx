@@ -131,11 +131,6 @@ const CodeWindowLoader = () => {
                 </div>
             </div>
 
-            {/* Status Text Below */}
-            <div className="mt-8 flex h-6 items-center justify-center overflow-hidden">
-                <AnimatedStatus text={currentStep.status} />
-            </div>
-
             <style>{`
         @keyframes shimmer {
           100% { transform: translateX(100%); }
