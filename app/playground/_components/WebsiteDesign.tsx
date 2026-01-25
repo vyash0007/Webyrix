@@ -9,7 +9,7 @@ import PanelHeader from "./PanelHeader";
 import { Monitor } from "lucide-react";
 import VersionSelector from "./VersionSelector";
 import { Button } from "@/components/ui/button";
-import SequentialLoaders from "./SequentialLoaders";
+import CodeWindowLoader from "./CodeWindowLoader";
 
 type Props = {
   generatedCode: string;
@@ -237,8 +237,8 @@ function WebsiteDesign({ generatedCode, isMinimized, isExpanded, onToggle, onExp
       <div className={`${isMinimized ? 'hidden' : 'flex'} flex-col h-full overflow-auto custom-scrollbar`}>
         <div className="p-3 sm:p-5 flex-1 flex flex-col items-center justify-center relative w-full h-full">
           {(isStreaming || !generatedCode) && (
-            <div className="absolute inset-0 z-10 p-3 sm:p-5">
-              <SequentialLoaders mode={isStreaming ? 'streaming' : 'loading'} />
+            <div className="absolute inset-0 z-10 flex items-center justify-center bg-background">
+              <CodeWindowLoader />
             </div>
           )}
           <iframe
